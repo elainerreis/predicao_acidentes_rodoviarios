@@ -1,0 +1,33 @@
+# Ambiente virtual
+venv/
+.env/
+
+# Cache Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Dados (NÃO versionar dados brutos)
+data/
+*.csv
+*.parquet
+*.xlsx
+*.json
+
+# Modelos treinados
+*.pkl
+*.joblib
+
+# Logs
+*.log
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
