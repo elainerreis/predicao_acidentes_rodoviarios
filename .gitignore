@@ -16,6 +16,7 @@ data/
 *.parquet
 *.xlsx
 *.json
+catboost_info/
 
 # Modelos treinados
 *.pkl
@@ -32,5 +33,6 @@ Thumbs.db
 .vscode/
 .idea/
 
+4 - CatBoost.ipynb
 notebooks/modelostest.ipynb
 
