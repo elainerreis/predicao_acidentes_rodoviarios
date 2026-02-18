@@ -33,6 +33,8 @@ Thumbs.db
 .idea/
 
 notebooks/modelostest.ipynb
+notebooks/xgbtest.ipynb
+notebooks/04_notebook.ipynb
 02_notebook.ipynb
 03_notebook.ipynb
 04_notebook.ipynb
