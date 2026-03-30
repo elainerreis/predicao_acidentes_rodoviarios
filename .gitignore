@@ -19,6 +19,7 @@ data/
 
 # Modelos treinados
 *.pkl
+!models/xgb_artifacts.pkl
 *.joblib
 
 # Logs
@@ -32,6 +33,7 @@ Thumbs.db
 .vscode/
 .idea/
 
+notebooks/analises.ipynb
 notebooks/modelostest.ipynb
 notebooks/xgbtest.ipynb
 notebooks/04_notebook.ipynb
