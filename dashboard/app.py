@@ -22,11 +22,12 @@ payload = {
 }
 
 if st.button("Calcular risco"):
+    #r = requests.post("https://predicao_acidentes_rodoviarios.com/predict_explain", json=payload)
     r = requests.post("http://localhost:8000/predict_explain", json=payload)
 
     res = r.json()
 
-    st.metric("Probabilidade de acidente", f"{res['probabilidade']*100:.2f}%")
+    st.metric("Probabilidade de Acidente", f"{res['probabilidade']*100:.2f}%")
 
     
 

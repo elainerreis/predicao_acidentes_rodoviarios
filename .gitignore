@@ -37,6 +37,8 @@ notebooks/analises.ipynb
 notebooks/modelostest.ipynb
 notebooks/xgbtest.ipynb
 notebooks/04_notebook.ipynb
+notebooks/01_pipeline.ipynb
+notebooks/transform.ipynb
 02_notebook.ipynb
 03_notebook.ipynb
 04_notebook.ipynb
