@@ -51,9 +51,9 @@ def encontrar_header(arquivo: Path) -> int:
         raise
 
 
-# ==========================================
+
 # PIPELINE DE DADOS
-# ==========================================
+
 
 def carregar_dados_prf(data_dir: Path) -> pd.DataFrame:
     """Lê e consolida os arquivos CSV de acidentes da PRF."""
@@ -205,9 +205,7 @@ def salvar_resultados(df_final: pd.DataFrame, data_dir: Path):
     logger.info(f"Amostra de 10% salva em: {arquivo_amostra}")
 
 
-# ==========================================
 # EXECUÇÃO PRINCIPAL
-# ==========================================
 
 def main():
     logger.info("--- INÍCIO DO PROCESSAMENTO ---")
