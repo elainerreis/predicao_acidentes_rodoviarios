@@ -192,8 +192,8 @@ def salvar_resultados(df_final: pd.DataFrame, data_dir: Path):
     output_dir = data_dir / "tratados"
     output_dir.mkdir(parents=True, exist_ok=True) # Cria a pasta se não existir
 
-    arquivo_completo = output_dir / "acidentes_frota_17-25.csv"
-    arquivo_amostra = output_dir / "amostra_17-25.csv"
+    arquivo_completo = output_dir / "acidentes_frota_23-25.csv"
+    arquivo_amostra = output_dir / "amostra_23-25.csv"
 
     # Salva dataset completo
     df_final.to_csv(arquivo_completo, index=False)

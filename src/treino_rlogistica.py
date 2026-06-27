@@ -21,7 +21,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Defina o diretório base (ajuste se for executar de outra pasta)
-BASE_DIR = Path().resolve().parent 
+BASE_DIR = Path(__file__).resolve().parent.parent
 DATA_DIR = BASE_DIR / "data" / "modelos"
 
 # ---------------------------------------------------------
@@ -33,8 +33,8 @@ def carregar_dados_e_preprocessador(data_dir: Path):
     """
     logger.info("A iniciar o carregamento dos dados e do pré-processador...")
     
-    caminho_prep = data_dir / 'preprocess.pkl'
-    caminho_splits = data_dir / 'data_splits.pkl'
+    caminho_prep = data_dir / 'preprocesst.pkl'
+    caminho_splits = data_dir / 'data_splitst.pkl'
     
     if not caminho_prep.exists() or not caminho_splits.exists():
         logger.error("Arquivos .pkl não encontrados. Verifique o diretório DATA_DIR.")
@@ -144,7 +144,7 @@ def main():
         modelo_final = otimizar_regressao_logistica(X_train, y_train, preprocess)
         
         # Salvar o melhor modelo final em disco
-        joblib.dump(modelo_final.best_estimator_, DATA_DIR / 'melhor_modelo_lr.pkl')
+        joblib.dump(modelo_final.best_estimator_, DATA_DIR / 'melhor_modelo_lrt.pkl')
         
         # Passo 3: Diagnóstico
         avaliar_modelo(modelo_final, X_test, y_test)

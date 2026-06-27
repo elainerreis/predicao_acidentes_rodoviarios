@@ -25,7 +25,7 @@ logger = logging.getLogger(__name__)
 # Configurações de caminhos corrigidas
 BASE_DIR = Path().resolve().parent 
 DATA_DIR = BASE_DIR / "TCC_ACIDENTES" 
-INPUT_FILE = DATA_DIR / "data" / "tratados" / "amostra_17-25.csv"
+INPUT_FILE = DATA_DIR / "data" / "tratados" / "amostra_23-25.csv"
 
 # 👉 CORREÇÃO AQUI: Agora aponta corretamente para TCC_ACIDENTES/data/modelos
 MODELS_DIR = DATA_DIR / "data" / "modelos"
@@ -133,8 +133,8 @@ def guardar_artefactos(
     # Cria o diretório de modelos caso não exista
     diretorio_saida.mkdir(parents=True, exist_ok=True)
     
-    caminho_pipeline = diretorio_saida / 'preprocess.pkl'
-    caminho_splits = diretorio_saida / 'data_splits.pkl'
+    caminho_pipeline = diretorio_saida / 'preprocesst.pkl'
+    caminho_splits = diretorio_saida / 'data_splitst.pkl'
 
     # Guardar pipeline
     joblib.dump(preprocessador, caminho_pipeline)
