@@ -24,8 +24,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 DATA_DIR = BASE_DIR / "data" / "modelos"
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 
-FILE_SPLITS = DATA_DIR / "data_splitst.pkl"
-MODELO_PATH = DATA_DIR / "modelo_xgboost_final.pkl"
+FILE_SPLITS = DATA_DIR / "data_splits.pkl"
+MODELO_PATH = DATA_DIR / "modelo_xgboost.pkl"
 
 
 # ==========================================
@@ -79,9 +79,9 @@ def treinar_modelo_otimizado(X_train: pd.DataFrame, y_train: pd.Series):
     search = RandomizedSearchCV(
         xgb,
         param_distributions=param_dist,
-        n_iter=100,
+        n_iter=50,
         scoring='f1',
-        cv=5,
+        cv=2,
         verbose=1,
         random_state=42,
         n_jobs=-1

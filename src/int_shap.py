@@ -24,7 +24,7 @@ REPORTS_DIR = BASE_DIR / "relatorios" / "figuras"
 REPORTS_DIR.mkdir(parents=True, exist_ok=True)
 
 FILE_SPLITS = DATA_DIR / "data_splitst.pkl"
-MODELO_PATH = DATA_DIR / "modelo_xgboost_final.pkl"
+MODELO_PATH = DATA_DIR / "modelo_xgboost.pkl"
 
 
 # ==========================================

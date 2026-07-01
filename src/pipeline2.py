@@ -25,7 +25,7 @@ logger = logging.getLogger(__name__)
 # Configurações de caminhos corrigidas
 BASE_DIR = Path().resolve().parent 
 DATA_DIR = BASE_DIR / "TCC_ACIDENTES" 
-INPUT_FILE = DATA_DIR / "data" / "tratados" / "amostra_23-25.csv"
+INPUT_FILE = DATA_DIR / "data" / "tratados" / "acidente_frota_17_25.csv"
 
 # 👉 CORREÇÃO AQUI: Agora aponta corretamente para TCC_ACIDENTES/data/modelos
 MODELS_DIR = DATA_DIR / "data" / "modelos"
